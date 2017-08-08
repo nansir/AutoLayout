@@ -1,9 +1,10 @@
 package com.sir.app.test;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.sir.app.autolayout.AutoLayoutActivity;
+
+public class MainActivity extends AutoLayoutActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
