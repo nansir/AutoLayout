@@ -47,7 +47,7 @@ install {
                 packaging 'aar'
                 // 项目描述
                 name 'AutoLayout'//项目名称
-                description 'The Android build the framework of the basic package.'//项目描述
+                description 'The Android project completes the screen adaptation plan.'//项目描述
                 url siteUrl // 项目主页，这里是引用上面定义
 
                 // 软件开源协议
