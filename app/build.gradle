@@ -24,7 +24,7 @@ dependencies {
 
     compile project(':autolayout')
 
-    compile 'com.android.support:appcompat-v7:26.+'
+    compile libSupportAppcompat_v7
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
     testCompile 'junit:junit:4.12'
 }

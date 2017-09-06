@@ -20,7 +20,6 @@ android {
 
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile libSupportAppcompat_v7
 }
 
@@ -30,7 +29,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 //项目引用的版本号;
-version = "1.0"
+version = "1.1"
 
 //定义两个链接，下面会用到。
 def siteUrl = 'https://github.com/nansir/AutoLayout'    // 项目主页
@@ -128,3 +127,6 @@ bintray {
         publish = true // 是否是公开项目
     }
 }
+
+// Terminal 窗口输入gradlew install 开始编译
+// Terminal 窗口输入gradlew bintrayUpload 开始上传
