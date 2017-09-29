@@ -1,8 +1,5 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sir.app.autolayout">
-
-    <application>
-        <!--设计UI的尺寸-->
+<manifest package="com.sir.app.autolayout">
+    <!--设计UI的尺寸<application>
         <meta-data
             android:name="design_width"
             android:value="768"></meta-data>
@@ -10,6 +7,5 @@
         <meta-data
             android:name="design_height"
             android:value="1280"></meta-data>
-    </application>
-
+    </application>-->
 </manifest>
