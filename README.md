@@ -1,7 +1,8 @@
-# AutoLayout
-Android屏幕适配方案,强迫症修改了包名去除了一些无效引用,重新打包了一遍[原文地址](https://github.com/hongyangAndroid/AndroidAutoLayout)
+# AutoLayout 
+Android屏幕适配方案,强迫症修改了包名去除了一些无效引用,增加了AutoCardView、AutoGridLayout重新打包了一遍[原文地址](https://github.com/hongyangAndroid/AndroidAutoLayout)
 ## 引入
-> compile 'com.sir.app:AutoLayout:1.0'
+[ ![Download](https://api.bintray.com/packages/nansir/AndroidApplication/AutoLayout/images/download.svg?version=1.1.2) ](https://bintray.com/nansir/AndroidApplication/AutoLayout/1.1.2/link)
+> compile 'com.sir.app:AutoLayout:1.1.2'
 ## 用法
 ### 第一步
 AndroidManifest中注明你的设计稿的尺寸
