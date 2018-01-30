@@ -34,19 +34,19 @@ public class AutoLayoutActivity extends AppCompatActivity {
             view = new AutoGridLayout(context, attrs);
         } else if (name.equals(LAYOUT_CARDVIEW)) {
             view = new AutoCardView(context, attrs);
-        }else if (name.equals(LAYOUT_RADIOGROUP)){
+        } else if (name.equals(LAYOUT_RADIOGROUP)) {
             view = new AutoRadioGroup(context, attrs);
-        }else if (name.equals(LAYOUT_TABLELAYOUT)){
+        } else if (name.equals(LAYOUT_TABLELAYOUT)) {
             view = new AutoTableLayout(context, attrs);
-        }else if (name.equals(LAYOUT_TABLEROW)){
+        } else if (name.equals(LAYOUT_TABLEROW)) {
             view = new AutoTableRow(context, attrs);
-        }else if (name.equals(LAYOUT_TOOLBAR)){
+        } else if (name.equals(LAYOUT_TOOLBAR)) {
             view = new AutoToolbar(context, attrs);
-        }else if (name.equals(LAYOUT_TAB_LAYOUT)){
+        } else if (name.equals(LAYOUT_TAB_LAYOUT)) {
             view = new AutoTabLayout(context, attrs);
-        }else if (name.equals(LAYOUT_ACTIONMENUITEM)){
+        } else if (name.equals(LAYOUT_ACTIONMENUITEM)) {
             view = new AutoActionMenuItemView(context, attrs);
-        }else if (name.equals(LAYOUT_AUTOAPPBARLAYOUT)){
+        } else if (name.equals(LAYOUT_AUTOAPPBARLAYOUT)) {
             view = new AutoAppBarLayout(context, attrs);
         }
 

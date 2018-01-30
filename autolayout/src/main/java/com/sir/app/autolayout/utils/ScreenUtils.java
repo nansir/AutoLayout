@@ -63,5 +63,4 @@ public class ScreenUtils {
         size[1] = heightPixels;
         return size;
     }
-
 }

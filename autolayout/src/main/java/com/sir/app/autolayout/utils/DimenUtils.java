@@ -6,6 +6,7 @@ import android.util.TypedValue;
  * Created by zhy on 16/3/3.
  */
 public class DimenUtils {
+
     private static int getComplexUnit(int data) {
         return TypedValue.COMPLEX_UNIT_MASK & (data >> TypedValue.COMPLEX_UNIT_SHIFT);
     }

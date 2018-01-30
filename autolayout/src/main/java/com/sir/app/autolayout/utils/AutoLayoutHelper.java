@@ -142,8 +142,6 @@ public class AutoLayoutHelper {
 
         for (int i = 0; i < n; i++) {
             int index = array.getIndex(i);
-//            String val = array.getString(index);
-//            if (!isPxVal(val)) continue;
 
             if (!DimenUtils.isPxVal(array.peekValue(index))) continue;
 

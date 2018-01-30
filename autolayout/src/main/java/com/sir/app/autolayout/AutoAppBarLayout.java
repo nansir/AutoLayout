@@ -38,7 +38,6 @@ public class AutoAppBarLayout extends AppBarLayout {
         return new AutoAppBarLayout.LayoutParams(getContext(), attrs);
     }
 
-
     public static class LayoutParams extends AppBarLayout.LayoutParams
             implements AutoLayoutHelper.AutoLayoutParams {
 

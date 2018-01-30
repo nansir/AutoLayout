@@ -90,6 +90,5 @@ public class AutoRelativeLayout extends RelativeLayout {
             return mAutoLayoutInfo;
         }
 
-
     }
 }

@@ -89,6 +89,4 @@ public class AutoLayoutConfig {
 
         Log.i(TAG, "designWidth =" + mDesignWidth + " , designHeight = " + mDesignHeight);
     }
-
-
 }

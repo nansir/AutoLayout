@@ -37,18 +37,15 @@ public class AutoGridLayout extends GridLayout {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
-
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         super.onLayout(changed, l, t, r, b);
     }
 
-
     @Override
     public LayoutParams generateLayoutParams(AttributeSet attrs) {
         return new AutoGridLayout.LayoutParams(getContext(), attrs);
     }
-
 
     public static class LayoutParams extends GridLayout.LayoutParams
             implements AutoLayoutHelper.AutoLayoutParams {
@@ -64,5 +61,4 @@ public class AutoGridLayout extends GridLayout {
             return mAutoLayoutInfo;
         }
     }
-
 }

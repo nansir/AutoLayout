@@ -123,7 +123,6 @@ public class AutoUtils {
     public static int getPercentHeightSize(int val) {
         int screenHeight = AutoLayoutConfig.getInstance().getScreenHeight();
         int designHeight = AutoLayoutConfig.getInstance().getDesignHeight();
-
         return (int) (val * 1.0f / designHeight * screenHeight);
     }
 }

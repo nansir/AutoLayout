@@ -105,6 +105,5 @@ public class AutoFrameLayout extends FrameLayout {
             return mAutoLayoutInfo;
         }
 
-
     }
 }
