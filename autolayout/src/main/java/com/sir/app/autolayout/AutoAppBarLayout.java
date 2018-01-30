@@ -1,34 +1,23 @@
 package com.sir.app.autolayout;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.os.Build;
+import android.support.design.widget.AppBarLayout;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.sir.app.autolayout.utils.AutoLayoutHelper;
 
-public class AutoLinearLayout extends LinearLayout {
+public class AutoAppBarLayout extends AppBarLayout {
 
     private AutoLayoutHelper mHelper = new AutoLayoutHelper(this);
 
-    public AutoLinearLayout(Context context) {
+    public AutoAppBarLayout(Context context) {
         super(context);
     }
 
-    public AutoLinearLayout(Context context, AttributeSet attrs) {
+    public AutoAppBarLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
-    }
-
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    public AutoLinearLayout(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-    }
-
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public AutoLinearLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
     }
 
     @Override
@@ -45,12 +34,14 @@ public class AutoLinearLayout extends LinearLayout {
     }
 
     @Override
-    public LayoutParams generateLayoutParams(AttributeSet attrs) {
-        return new AutoLinearLayout.LayoutParams(getContext(), attrs);
+    public AutoAppBarLayout.LayoutParams generateLayoutParams(AttributeSet attrs) {
+        return new AutoAppBarLayout.LayoutParams(getContext(), attrs);
     }
 
-    public static class LayoutParams extends LinearLayout.LayoutParams
+
+    public static class LayoutParams extends AppBarLayout.LayoutParams
             implements AutoLayoutHelper.AutoLayoutParams {
+
         private AutoLayoutInfo mAutoLayoutInfo;
 
         public LayoutParams(Context c, AttributeSet attrs) {

@@ -33,6 +33,7 @@ allprojects {
         libSupportRecyclerView = "com.android.support:recyclerview-v7:${supportVersion}"
         libSupportCardView = "com.android.support:cardview-v7:${supportVersion}"
         libSupportDesign = "com.android.support:design:${supportVersion}"
+        libSupportGridlayout = "com.android.support:gridlayout-v7:${supportVersion}"
         libSupportAnnotations = "com.android.support:support-annotations:${supportVersion}"
     }
 }

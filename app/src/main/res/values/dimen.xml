@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actionbar_size">180px</dimen>
+    <dimen name="actionbar_text_size">50px</dimen>
+
+
+    <dimen name="button_width_750px">750px</dimen>
+    <dimen name="button_height_135px">135px</dimen>
+</resources>

@@ -26,6 +26,7 @@ import android.widget.RelativeLayout;
 import com.sir.app.autolayout.utils.AutoLayoutHelper;
 
 public class AutoRelativeLayout extends RelativeLayout {
+
     private final AutoLayoutHelper mHelper = new AutoLayoutHelper(this);
 
     public AutoRelativeLayout(Context context) {

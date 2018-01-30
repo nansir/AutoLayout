@@ -21,9 +21,9 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-
-    //compile project(':autolayout')
-    compile 'com.sir.app:AutoLayout:1.0'
+    compile libSupportCardView
+    compile project(':autolayout')
+    //compile 'com.sir.app:AutoLayout:1.0'
     compile libSupportAppcompat_v7
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
     testCompile 'junit:junit:4.12'

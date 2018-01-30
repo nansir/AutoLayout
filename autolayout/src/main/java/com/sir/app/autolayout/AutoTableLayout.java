@@ -1,55 +1,45 @@
 package com.sir.app.autolayout;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.TableLayout;
 
 import com.sir.app.autolayout.utils.AutoLayoutHelper;
 
-public class AutoLinearLayout extends LinearLayout {
+public class AutoTableLayout extends TableLayout {
 
     private AutoLayoutHelper mHelper = new AutoLayoutHelper(this);
 
-    public AutoLinearLayout(Context context) {
-        super(context);
+    public AutoTableLayout(Context context) {
+        this(context,null);
     }
 
-    public AutoLinearLayout(Context context, AttributeSet attrs) {
+    public AutoTableLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
-    }
-
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    public AutoLinearLayout(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-    }
-
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public AutoLinearLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
     }
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        if (!isInEditMode()) {
+        if (!isInEditMode())
             mHelper.adjustChildren();
-        }
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
+
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         super.onLayout(changed, l, t, r, b);
     }
 
+
     @Override
     public LayoutParams generateLayoutParams(AttributeSet attrs) {
-        return new AutoLinearLayout.LayoutParams(getContext(), attrs);
+        return new LayoutParams(getContext(), attrs);
     }
 
-    public static class LayoutParams extends LinearLayout.LayoutParams
+
+    public static class LayoutParams extends TableLayout.LayoutParams
             implements AutoLayoutHelper.AutoLayoutParams {
         private AutoLayoutInfo mAutoLayoutInfo;
 
