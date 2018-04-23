@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sir.app.test">
+    package="com.sir.library.test">
 
     <application
         android:allowBackup="true"
@@ -20,7 +20,7 @@
             android:value="1920"></meta-data>
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.sir.library.test.MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
