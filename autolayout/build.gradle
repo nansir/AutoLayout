@@ -119,7 +119,7 @@ bintray {
     key = properties.getProperty("bintray.apikey") // Bintray刚才保存的ApiKey
     configurations = ['archives']
     pkg {
-        repo = "AndroidApplication"
+        repo = "Android"
         // 上传到maven库。（这里要特别注意，如果写了maven报404错误，请在bintray创建一个仓库，这里填改成你创建的仓库的名字。）
         name = "AutoLayout"  // 发布到Bintray上的项目名字
         userOrg = 'nansir' // Bintray的用户名
