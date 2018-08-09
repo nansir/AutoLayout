@@ -3,7 +3,7 @@
 
     <declare-styleable name="AutoLayout_Layout">
 
-        <attr name="layout_auto_basewidth">
+        <attr name="layout_auto_base_width">
             <flag name="width" value="1"></flag>
             <flag name="height" value="2"></flag>
             <flag name="textSize" value="4"></flag>
@@ -19,7 +19,7 @@
             <flag name="paddingBottom" value="4096"></flag>
         </attr>
 
-        <attr name="layout_auto_baseheight">
+        <attr name="layout_auto_base_height">
             <flag name="width" value="1"></flag>
             <flag name="height" value="2"></flag>
             <flag name="textSize" value="4"></flag>
@@ -40,7 +40,6 @@
         </attr>
 
     </declare-styleable>
-
 
     <declare-styleable name="MetroLayout">
         <attr name="metro_divider" format="dimension"></attr>

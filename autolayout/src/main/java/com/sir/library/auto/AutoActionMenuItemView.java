@@ -26,19 +26,18 @@ public class AutoActionMenuItemView extends ActionMenuItemView {
     @SuppressLint("RestrictedApi")
     public AutoActionMenuItemView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.AppCompatTheme,
-                defStyle, R.style.ThemeOverlay_AppCompat);
+        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.AppCompatTheme, defStyle, R.style.ThemeOverlay_AppCompat);
         int menuTextAppearance = a.getResourceId(R.styleable.Toolbar_titleTextAppearance, R.style.ThemeOverlay_AppCompat_ActionBar);
         mMenuTextSize = loadTextSizeFromTextAppearance(menuTextAppearance);
         a.recycle();
     }
 
     private int loadTextSizeFromTextAppearance(int textAppearanceResId) {
-        TypedArray a = getContext().obtainStyledAttributes(textAppearanceResId,
-                R.styleable.TextAppearance);
+        TypedArray a = getContext().obtainStyledAttributes(textAppearanceResId, R.styleable.TextAppearance);
         try {
-            if (!ScreenUtils.isPxVal(a.peekValue(R.styleable.TextAppearance_android_textSize)))
+            if (!ScreenUtils.isPxVal(a.peekValue(R.styleable.TextAppearance_android_textSize))) {
                 return NO_VALID;
+            }
             return a.getDimensionPixelSize(R.styleable.TextAppearance_android_textSize, NO_VALID);
         } finally {
             a.recycle();

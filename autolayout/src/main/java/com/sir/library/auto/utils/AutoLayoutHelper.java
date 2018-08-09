@@ -108,8 +108,8 @@ public class AutoLayoutHelper {
         AutoLayoutInfo info = new AutoLayoutInfo();
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.AutoLayout_Layout);
-        int baseWidth = a.getInt(R.styleable.AutoLayout_Layout_layout_auto_basewidth, 0);
-        int baseHeight = a.getInt(R.styleable.AutoLayout_Layout_layout_auto_baseheight, 0);
+        int baseWidth = a.getInt(R.styleable.AutoLayout_Layout_layout_auto_base_width, 0);
+        int baseHeight = a.getInt(R.styleable.AutoLayout_Layout_layout_auto_base_height, 0);
         a.recycle();
 
         TypedArray array = context.obtainStyledAttributes(attrs, LL);
